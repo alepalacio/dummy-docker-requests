@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+
+  api:
+    container_name: basic_api_requests
+    build:
+      context: .
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/opt/app/
+
